@@ -28,13 +28,19 @@ class _MyNameWidgetState extends State<MyNameWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [Text(_name)],
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 3, 0, 3),
+          child: Row(
+            children: [Text(_name)],
+          ),
         ),
-        Row(
-          children: [
-            ElevatedButton(onPressed: onPressed, child: Text('Name anzeigen'))
-          ],
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 3, 0, 3),
+          child: Row(
+            children: [
+              ElevatedButton(onPressed: onPressed, child: Text('Name anzeigen'))
+            ],
+          ),
         ),
       ],
     );

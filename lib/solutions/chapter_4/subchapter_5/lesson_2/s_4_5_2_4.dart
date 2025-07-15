@@ -35,8 +35,14 @@ class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(_name),
-        ElevatedButton(onPressed: onPressed, child: Text(_btnName)),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 3, 0, 3),
+          child: Text(_name),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 3, 0, 3),
+          child: ElevatedButton(onPressed: onPressed, child: Text(_btnName)),
+        ),
       ],
     );
   }
