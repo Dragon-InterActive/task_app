@@ -21,13 +21,9 @@ class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
 
   void onPressed() {
     setState(() {
-      if (_name == '') {
-        _name = 'Nemo';
-        _btnName = 'Name verstecken';
-      } else {
-        _name = '';
-        _btnName = 'Name anzeigen';
-      }
+      _name = _name == '' ? 'Nemo' : '';
+      _btnName =
+          _btnName == 'Name anzeigen' ? 'Name verstecken' : 'Name anzeigen';
     });
   }
 
